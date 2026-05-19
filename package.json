@@ -1,0 +1,28 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Aprendendo Typescript",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx ./src/index.ts",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmtac1/typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jmtac1/typescript/issues"
+  },
+  "homepage": "https://github.com/jmtac1/typescript#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}
