@@ -29,7 +29,7 @@ function soma(a: number, b: number): number {
 }
 
 // parametro opcional:
-function saudacao(nome: string, idade?: number) {
+function saudacao(nome: string, idade?: number) { // a interrogação indica que o parametro é opcional
     console.log(`ola meu nome é ${nome} e tenho ${idade} anos`)
 }
 
