@@ -17,12 +17,12 @@ type Ciborgue = Robo & Humano // Para criar uma interseção, utiliza-se o opera
 const joao: Ciborgue = {combustivel: 'gasolina', idade: 21, material: 'metal', nome: 'joao'}
 
 // criando opções customizadas de uma função existente:
-interface MyFetcheOptions {
+interface MyFetchOptions {
     printInput: boolean,
     printHora: boolean
 }
 
-type requestOptions = MyFetcheOptions & RequestInit
+type requestOptions = MyFetchOptions & RequestInit
 
 export function myFetch(input: string, options?: requestOptions) {
     if (options?.printInput) {
@@ -39,4 +39,3 @@ myFetch("exemplo de url", {
     printHora: true,
     printInput: true
 })
-
