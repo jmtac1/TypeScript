@@ -4,14 +4,19 @@
 
 // criando uma classe:
 class Jogador {
+    private static jogadores: Jogador[] = []
     private nome: string
     private vida: number
 
     constructor(nome: string, vida: number) {
         this.nome = nome
         this.vida = vida
+        Jogador.jogadores.push(this)
     }
 
+    public static getJogadores() {
+        return this.jogadores
+    }
     public getNome() {
         return this.nome
     }
@@ -34,7 +39,10 @@ class Jogador {
         }
         this.vida = vidaAtualizada
     }
-    private morrer() {
+    private morrer(inimigo?: Jogador) {
+        if (inimigo) {
+            console.log(`${inimigo.nome} matou ${this.nome}`)
+        }
         console.log(`${this.nome} morreu`)
     }
 }
@@ -43,3 +51,5 @@ const jogador1 = new Jogador('joao', 100)
 const jogador2 = new Jogador('marcio', 100)
 
 jogador1.dano(33, jogador2)
+
+console.log(Jogador.getJogadores())
