@@ -14,11 +14,11 @@ type Primitivos = string | number | boolean
 // tipo exato do dado naquele bloco de código. A forma mais comum de fazer isso é usando a instrução typeof:
 function typeNarrowing(valor: Primitivos) {
     if (typeof valor === 'string') {
-        console.log(valor.valueOf())
+        console.log(valor.toUpperCase())
     }
 
     if (typeof valor === 'number') {
-        console.log(valor.valueOf())
+        console.log(valor.toExponential())
     }
 
     if (typeof valor === 'boolean') {
