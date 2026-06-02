@@ -14,17 +14,17 @@ class Jogador {
         Jogador.jogadores.push(this)
     }
 
-    public static getJogadores() {
+    public static getJogadores(): Jogador[] {
         return this.jogadores
     }
-    public getNome() {
+    public getNome(): string {
         return this.nome
     }
-    public getVida() {
+    public getVida(): number {
         return this.vida
     }
 
-    public dano(quantidade: number, inimigo?: Jogador) {
+    public dano(quantidade: number, inimigo?: Jogador): void {
         const vidaAtualizada = this.vida - quantidade
 
         console.log(inimigo 
@@ -39,7 +39,7 @@ class Jogador {
         }
         this.vida = vidaAtualizada
     }
-    private morrer(inimigo?: Jogador) {
+    private morrer(inimigo?: Jogador): void {
         if (inimigo) {
             console.log(`${inimigo.nome} matou ${this.nome}`)
         }
@@ -53,3 +53,19 @@ const jogador2 = new Jogador('marcio', 100)
 jogador1.dano(33, jogador2)
 
 console.log(Jogador.getJogadores())
+
+// herança:
+class animal {
+    private nome: string
+    private idade: number
+
+    constructor(nome: string, idade: number) {
+        this.nome = nome
+        this.idade = idade
+    }
+
+    public fazerSom(): void {
+        console.log(`${this.nome} fez um som`)
+    }
+}
+
