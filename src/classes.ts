@@ -55,9 +55,9 @@ jogador1.dano(33, jogador2)
 console.log(Jogador.getJogadores())
 
 // herança:
-class animal {
-    private nome: string
-    private idade: number
+class Animal {
+    protected nome: string
+    protected idade: number
 
     constructor(nome: string, idade: number) {
         this.nome = nome
@@ -69,3 +69,19 @@ class animal {
     }
 }
 
+class Cachorro extends Animal {
+    private cor: string
+    constructor(nome: string, idade: number, cor: string) {
+        super(nome, idade)
+        this.cor = cor
+    }
+    public fazerSom(): void {
+        console.log(`${this.nome} esta latindo`)
+    }
+}
+
+const cachorro = new Cachorro('dog day', 3, 'marrom')
+
+cachorro.fazerSom()
+
+// implementar interfaces em classes:
