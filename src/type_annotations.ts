@@ -1,5 +1,4 @@
-// type annotations em typescript são uma forma de definir explicitamente o tipo de uma variável, parametro de função ou propriedade 
-// de um objeto
+/* type annotations em typescript são uma forma de definir explicitamente o tipo de uma variável, parametro de função ou propriedade de um objeto */
 
 // tipo string:
 const nome: string = "joao"

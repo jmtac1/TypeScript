@@ -1,4 +1,4 @@
-// Os enums (enumeradores) no TypeScript permitem agrupar um conjunto de constantes nomeadas. Eles tornam o código mais legível e seguro, evitando o uso de "magic strings". Existem três tipos principais: numéricos, de texto (string) e constantes (const enums)
+/* Os enums (enumeradores) no TypeScript permitem agrupar um conjunto de constantes nomeadas. Eles tornam o código mais legível e seguro, evitando o uso de "magic strings". Existem três tipos principais: numéricos, de texto (string) e constantes (const enums) */
 
 // como criar um enum (enum numérico):
 enum Direcoes {

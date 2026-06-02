@@ -1,6 +1,4 @@
-// Em TypeScript, as interfaces funcionam como contratos para definir a estrutura ou o formato de um objeto. Elas são usadas para 
-// garantir a consistência do código em tempo de desenvolvimento, permitindo que a IDE forneça autocompletar e avisos caso 
-// propriedades obrigatórias sejam esquecidas.
+/* Em TypeScript, as interfaces funcionam como contratos para definir a estrutura ou o formato de um objeto. Elas são usadas para garantir a consistência do código em tempo de desenvolvimento, permitindo que a IDE forneça autocompletar e avisos caso propriedades obrigatórias sejam esquecidas. */
 
 
 // usando interface para definr tipos de objetos:

@@ -1,6 +1,4 @@
-// Classes em TypeScript são moldes para a criação de objetos, combinando dados (propriedades) e comportamentos (métodos). 
-// Elas estendem o JavaScript moderno adicionando tipagem estática e modificadores de acesso para maior segurança e 
-// previsibilidade no código.
+/* Classes em TypeScript são moldes para a criação de objetos, combinando dados (propriedades) e comportamentos (métodos). Elas estendem o JavaScript moderno adicionando tipagem estática e modificadores de acesso para maior segurança e previsibilidade no código. */
 
 // criando uma classe:
 class Jogador {
@@ -51,7 +49,6 @@ const jogador1 = new Jogador('joao', 100)
 const jogador2 = new Jogador('marcio', 100)
 
 jogador1.dano(33, jogador2)
-
 console.log(Jogador.getJogadores())
 
 // herança:
@@ -81,7 +78,37 @@ class Cachorro extends Animal {
 }
 
 const cachorro = new Cachorro('dog day', 3, 'marrom')
-
 cachorro.fazerSom()
 
 // implementar interfaces em classes:
+interface Dirigir {
+    ligarMotor(): void
+    dirigir(): void
+}
+
+class Carro implements Dirigir {
+    ligarMotor(): void {
+        console.log('motor ligado')
+    }
+    dirigir(): void {
+        console.log('dirigindo')
+    }
+}
+
+// classe abstrata:
+abstract class Forma {
+    abstract area(): number
+}
+
+class Circulo extends Forma {
+    private raio: number
+
+    constructor(raio: number) {
+        super()
+        this.raio = raio
+    }
+    area(): number {
+        return Math.PI * this.raio ** 2
+    }
+    
+}

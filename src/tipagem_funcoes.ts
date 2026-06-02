@@ -1,6 +1,4 @@
-// A tipagem de funções no TypeScript envolve a definição dos tipos dos parâmetros e do valor de retorno. Ela garante a 
-// consistência e evita erros durante o desenvolvimento. A tipagem pode ser aplicada diretamente na assinatura da função ou de 
-// forma separada utilizando type ou interface.
+/* A tipagem de funções no TypeScript envolve a definição dos tipos dos parâmetros e do valor de retorno. Ela garante a consistência e evita erros durante o desenvolvimento. A tipagem pode ser aplicada diretamente na assinatura da função ou de forma separada utilizando type ou interface. */
 
 // tipando parâmetros e retornos de funções:
 function soma(a: number, b: number): number {

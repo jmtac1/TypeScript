@@ -1,5 +1,4 @@
-// Em TypeScript, um Type Intersection (interseção de tipos) permite combinar múltiplos tipos em um único tipo que possui 
-// todas as propriedades de todos os tipos envolvidos.
+/* Em TypeScript, um Type Intersection (interseção de tipos) permite combinar múltiplos tipos em um único tipo que possui todas as propriedades de todos os tipos envolvidos. */
 
 // criando um tipo combinando interfaces:
 interface Robo {
