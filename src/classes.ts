@@ -110,5 +110,4 @@ class Circulo extends Forma {
     area(): number {
         return Math.PI * this.raio ** 2
     }
-    
 }
