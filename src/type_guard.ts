@@ -45,3 +45,48 @@ function mover(animal: Peixe | Passaro) {
         animal.voar()
     }
 }
+
+// is:
+/* Quando as estruturas de dados são complexas ou baseadas apenas em interfaces, os operadores nativos não bastam. Você pode criar funções customizadas utilizando a sintaxe de predicado de tipo: parametro is Tipo. */
+
+interface Professor {
+    ensinar: () => void
+    diploma: string
+}
+interface Chef {
+    cozinhar: () => void
+    certificado: string
+}
+interface Motorista {
+    dirigir: () => void
+    carteira: string
+}
+
+type Profissionais = Professor | Chef | Motorista
+
+function isChef(valor: Profissionais): valor is Chef {
+    return (valor as Chef).cozinhar !== undefined
+}
+function isProfessor(valor: Profissionais): valor is Professor {
+    return (valor as Professor).ensinar !== undefined
+}
+function isMotorista(valor: Profissionais): valor is Motorista {
+    return (valor as Motorista).dirigir !== undefined
+}
+
+function executar(profissional: Profissionais) {
+    switch (true) {
+        case isChef(profissional): {
+            profissional.cozinhar()
+            break
+        }
+        case isProfessor(profissional): {
+            profissional.ensinar()
+            break
+        }
+        case isMotorista(profissional): {
+            profissional.dirigir()
+            break
+        }
+    }
+}
