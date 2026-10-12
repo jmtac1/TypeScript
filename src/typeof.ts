@@ -9,13 +9,11 @@ function tipoPrimitivo(valor: string | number) {
 }
 
 // Usando typeof como anotação de tipo:
-
 let usuario = 'jmtac'
 
 let nome: typeof usuario = 'joao'
 
 // Exemplo com objeto:
-
 const ficha = {
     nome: 'joao',
     idade: 21,
